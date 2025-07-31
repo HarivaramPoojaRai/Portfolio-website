@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pooja Portfolio Website</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://kit.fontawesome.com/c75ea20478.js" crossorigin="anonymous"></script>
+     <style>
+    /* Enable smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+    </head>
+    <body>
+    <div id="header">
+     <div class="container">
+        <nav>
+            <img src="images/logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>B'tech 3rd year student </p>
+            <h1>Hi, I'm Harivaram<span> Pooja Rai</span><br>from Hyderabad</h1>
+        </div>
+     </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_7784.jpg"><br>
+                </div>
+                <div class="about-col-2">
+                   <h1 class = "sub-title"> About Me</h1><br>
+                   <p>I am a 3rd year B.Tech student specializing in Artificial Intelligence and Machine Learning (AIML) at WOXSEN UNIVERSITY, 
+                    with a strong passion for web development, smart technology integration and real-world tech applications.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Web Development (Front-end & Back-end)</li>
+                            <li><span>Arduino-based Hardware Prototyping</span><br>Deep Learning for Computer Vision</li>
+                            <li><span>Languages:</span></li>
+                            HTML,<br>
+                            CSS,<br>
+                            Java Script,<br>
+                            ReactJS, <br>
+                            Tailwind CSS,<br>
+                            Node.js / Express.js,<br>
+                            MongoDB / MySQL<br>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 – 2027</span><br>Woxsen University, Hyderabad Bachelor of Technology in Computer Science Engineering (Artificial Intelligence & Machine Learning)</li>
+                            <li>Currently in 5th Semester<br>Student Exchange Program at UCSI University, Malaysia (4th Semester – Spring 2025) – 4thSemester GPA: 3.13 / 4.00</li>
+                            <li><span>2021 – 2023</span><br>Meluha International School, Hyderabad <br>11th & 12th Grade – MPC <br>12th Grade Marks: 69%</li>
+                            <li><span>2020 – 2021</span><br>Ravindra Bharathi School, Shadnagar <br> 10th Grade <br> CGPA: 10 / 10</li>
+                        </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Academic Projects</span></li>
+                            <li><span>Flight Ticket Booking Website</span><br> During my 4th semester in UCSI University, malaysia, Designed a full-stack travel booking platform with payment integration and responsive UI.</li>
+                            <li><span>Smart Waste Bin using Arduino Uno</span><br>Developed a smart bin using ultrasonic sensors and AI image detection to automate waste classification.</li>
+                            <li><span>Fire Detection CCTV System</span><br>Built a deep learning-based CCTV that detects fire incidents in real-time using image classification models.</li>
+                            <li><span>Portfolio Website</span><br>Created a few personal portfolios using HTML, CSS, JS, ReactJS and Tailwind CSS with animated sections and project showcases.</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+    <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>"I offer modern web design services using powerful technologies like React.js for dynamic front-end development and Node.js for scalable back-end solutions.
+                 My focus is on creating fast, responsive, and user-friendly websites tailored to your needs."</p>
+                 <a href="#">Learn more </a>
+            </div>
+            <div>
+                <i class="fa-solid fa-microchip"></i>
+                <h2>Arduino-based Hardware Prototyping</h2>
+                <p>"I design and develop hardware prototypes using Arduino, integrating sensors and microcontrollers to build intelligent systems. One of my key projects is a Smart Waste AI Bin,
+                 which uses sensor-based automation to detect and manage waste efficiently. My work focuses on bridging the gap between software intelligence and real-world functionality."</p>
+                 <a href="#">Learn more </a>
+            </div>
+            <div>
+                <i class="fa-solid fa-network-wired"></i>
+                <h2>Deep Learning for Computer Vision</h2>
+                <p>"I specialize in applying deep learning techniques for computer vision tasks, using convolutional neural networks (CNNs) to develop intelligent systems capable of image classification,
+                 object detection, and real-time video analysis. One of my key projects is a Fire Detection System using CCTV footage, which leverages CNNs to identify fire and smoke in real-time, enhancing safety and response in surveillance environments. My solutions are tailored for applications like security, medical imaging, and smart automation."</p>
+                 <a href="#">Learn more </a>
+            </div>
+        </div>
+    </div>
+   </div>
+    <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1><br>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/waste.jpeg">
+                <div class="layer">
+                <h3> Arduino Uno Powered Waste Classification System </h3>
+                <p> "I developed a Smart Waste Bin using an Arduino Uno board integrated with ultrasonic sensors, a moisture sensor, and a metal detector.</p>
+             <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> 
+            </div>
+            </div> 
+            <div class="work">
+                <img src="images/flight.jpg">
+                <div class="layer">
+                <h3> AirEase: Full-Stack Flight Booking Platform</h3>
+                <p> "I built a fully functional Flight Booking Website using modern web technologies, covering both front-end and back-end development.</p>
+             <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> 
+            </div>
+            </div> 
+            <div class="work">
+                <img src="images/fire.jpeg">
+                <div class="layer">
+                <h3> FireVision: Deep Learning-Based Fire Detection</h3>
+                <p> "I developed a real-time Fire Detection System using CCTV footage and Convolutional Neural Networks (CNNs).</p>
+             <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> 
+            </div>
+            </div> 
+            <div class="work">
+                <img src="images/image1.png">
+                <div class="layer">
+                <h3> Creative Tech Portfolio</h3>
+                <p> "This portfolio website serves as a personal showcase of my technical projects, skills, and services.</p>
+             <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> 
+             </div>
+            </div> 
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+   </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class = "sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>hpoojarai@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 8121844569</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/poojawhatisthisbehaviourr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/harivaram-pooja-rai-a7bba12a2" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a> 
+                </div>
+                <a href="" class ="btn btn2">Download CV</a>
+            </div>
+                <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <span id="msg" style="color: #00ff88; margin-top: 10px; display: none;"></span>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                </div>
+        </div>
+    </div>
+    <div class="copyright" >
+        <p>copyright © Pooja. Made with <i class="fa-solid fa-heart"></i> VS code</p>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        var sidemenu = document.getElementById("sidemenu"); // Get the sidemenu element
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // Functions for mobile menu
+        function openmenu() {
+            sidemenu.style.right = "0"; // Slide in
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px"; // Slide out
+        }
+</script>
+<script>
+  const scriptURL = "https://script.google.com/macros/s/AKfycbxCDM_qvkTkCi7-oqScZXhswo_2QaYMMDvwauUaRiK2kpPMkWhqSH_1LzbvvAe8-STC2w/exec";
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    // Show immediate feedback while submitting
+    msg.style.display = "block";
+    msg.style.color = "#00ff88";
+    msg.innerHTML = "Sending message...";
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!";
+        setTimeout(() => {
+          msg.innerHTML = "";
+          msg.style.display = "none";
+        }, 5000);
+        form.reset();
+      })
+      .catch(error => {
+        msg.innerHTML = "Error sending message. Please try again.";
+        msg.style.color = "#ff004f";
+        console.error('Error!', error.message);
+      });
+  });
+</script>
+ </body>
+</html>
